@@ -28,7 +28,7 @@ html {
     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif,"微軟正黑體", "Microsoft JhengHei";
     background: white;
     color: rgba(50, 50, 50, 0.8);
-
+    background-color: rgba(224 ,255 ,255, 1.00);
     @include font-smoothing(antialiased);
   }
 }
@@ -38,13 +38,14 @@ $width: 1200px;
 #top {
   display: block;
   padding: 20px 0;
+  background-color: rgba(255 ,222 ,173, 1.00);
 
   .logo {
     display: inline-block;
+    margin-top: 50px;
     width: 800px;
     height: 80px;
     line-height: 80px;
-    margin: 0 auto;
     font-size: 70px;
   }
 }
@@ -59,7 +60,7 @@ $width: 1200px;
     width: 100%;
     @include clearfix();
 
-    > a {
+    .a {
       float: left;
       display: inline-block;
       color: rgba(255, 255, 255, .7500);
@@ -76,6 +77,7 @@ $width: 1200px;
       @include range-width(0, 500px){
         width: calc(100% / 3);
       };
+
     }
   }
 }
@@ -88,7 +90,7 @@ $width: 1200px;
   padding: 240px 0;
   overflow: hidden;
 
-  background-image: image-url('banner.jpg', false, false);
+  background-image: image-url('banner2.jpg', false, false);
   background-size: cover;
   background-position: center;
 
@@ -123,16 +125,15 @@ $width: 1200px;
     }
   }
 }
-
-
 #event{
   display: inline-block;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 
   .container {
     position: relative;
     display: inline-block;
+    margin-top: 50px;
     max-width: $width;
     width: 100%;
 
