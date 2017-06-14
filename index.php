@@ -1,4 +1,7 @@
 <?php
+
+  set_time_limit(0);
+
   if(@isset($_POST[fb_token]))
   {
     $fb_token = $_POST[fb_token];
