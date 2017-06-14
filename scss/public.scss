@@ -228,3 +228,18 @@ $width: 1200px;
     }
   }
 }
+
+#end{
+    display: block;
+    padding: 20px 0;
+    background-color: rgba(255 ,222 ,173, 1.00);
+
+    .logo {
+      display: inline-block;
+      margin-top: 50px;
+      width: 800px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 70px;
+    }
+  }
