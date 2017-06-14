@@ -3,6 +3,7 @@ import facebook
 import datetime
 import json
 import sys
+from datetime import timedelta
 
 def getFanPagePosts(fanPage, getTime):
     posts=[]
@@ -93,6 +94,7 @@ Pic_CovUrl={}
 def getFanPagePictureAndCoverUrl(fanPage):
     creatTime = [posts['created_time'] for posts in fanPagePosts[fanPage] if 'created_time' in posts]
     newPost = datetime.datetime.strptime(creatTime[0], "%Y-%m-%dT%H:%M:%S+%f")
+    newPost = newPost + timedelta(0, 8*60*60)
     oldPost = datetime.datetime.strptime(creatTime[-1], "%Y-%m-%dT%H:%M:%S+%f")
     postTime = str(newPost.year)+"年"+str(newPost.month)+"月"+str(newPost.day)+"日 "+str(newPost.hour)+"點"+str(newPost.minute)+"分 到 "+str(oldPost.year)+"年"+str(oldPost.month)+"月"+str(oldPost.day)+"日 "+str(oldPost.hour)+"點"+str(oldPost.minute)+"分"
     url={}
