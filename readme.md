@@ -15,5 +15,5 @@
 
 分析FB實況主的紛絲團貼文，了解實況主近期在討論那些遊戲
 點擊遊戲圖片，可以看到每位實況主的討論次數，由多到少排列
-在首頁能夠進行即時分析，必須些輸入FB Graph API 的access_token，並等一小段時間即可完成分析
-如無法分析請將get_fanpage_posts.py的import先安裝
+在首頁能夠進行即時分析，必須先輸入FB Graph API 的access_token，並等一小段時間即可完成分析
+如無法分析請先安裝python且將get_fanpage_posts.py中出現的import安裝
